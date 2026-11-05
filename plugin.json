@@ -1,0 +1,22 @@
+{
+  "name": "unleash-skills",
+  "version": "0.1.8",
+  "description": "See your application change behavior when you toggle a flag in Unleash.",
+  "author": {
+    "name": "nunogois",
+    "url": "https://github.com/nunogois"
+  },
+  "repository": "https://github.com/nunogois/unleash-skills",
+  "homepage": "https://github.com/nunogois/unleash-skills",
+  "keywords": [
+    "unleash",
+    "feature-flags",
+    "onboarding"
+  ],
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "extensions": {
+    "com.openai": {
+      "onboardingSkill": "./skills/onboarding/SKILL.md"
+    }
+  }
+}

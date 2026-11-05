@@ -1,0 +1,12 @@
+{
+  "name": "nunogois",
+  "metadata": { "description": "Personal skills for getting started with Unleash." },
+  "owner": { "name": "nunogois" },
+  "plugins": [
+    {
+      "name": "unleash-skills",
+      "source": "./",
+      "description": "Get started with Unleash through a shared onboarding skill."
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "mcp": {
+      "command": "node",
+      "args": [
+        "${CLAUDE_PLUGIN_ROOT}/scripts/run-mcp.js"
+      ],
+      "env": {
+        "UNLEASH_BASE_URL": "${user_config.instance_url}",
+        "UNLEASH_PAT": "${user_config.personal_access_token}"
+      }
+    }
+  }
+}

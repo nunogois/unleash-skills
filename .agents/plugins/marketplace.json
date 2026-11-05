@@ -1,0 +1,20 @@
+{
+  "name": "nunogois",
+  "interface": {
+    "displayName": "nunogois"
+  },
+  "plugins": [
+    {
+      "name": "unleash-skills",
+      "source": {
+        "source": "local",
+        "path": "./"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

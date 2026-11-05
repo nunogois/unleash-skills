@@ -1,0 +1,4 @@
+interface:
+  display_name: "Unleash onboarding"
+  short_description: "Observe your first Unleash flag change an application"
+  default_prompt: "Use $onboarding to observe a feature change in a demo or my existing application using the appropriate frontend or backend SDK."

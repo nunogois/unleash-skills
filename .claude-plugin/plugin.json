@@ -1,0 +1,31 @@
+{
+  "name": "unleash-skills",
+  "version": "0.1.8",
+  "description": "See your application change behavior when you toggle a flag in Unleash.",
+  "author": {
+    "name": "nunogois",
+    "url": "https://github.com/nunogois"
+  },
+  "repository": "https://github.com/nunogois/unleash-skills",
+  "userConfig": {
+    "instance_url": {
+      "type": "string",
+      "title": "Unleash instance URL",
+      "description": "The instance root, including any base path, without /api (for example https://example.com/unleash).",
+      "required": true
+    },
+    "personal_access_token": {
+      "type": "string",
+      "title": "Unleash personal access token",
+      "description": "In Unleash, open your avatar → View profile settings → Personal API tokens → New token. Name it for your AI agent and choose an expiry. It gives the agent your permissions; the app uses a separate SDK token. Copy the full token here (shown once), never into chat. Help: https://docs.getunleash.io/concepts/api-tokens-and-client-keys#personal-access-tokens",
+      "required": true,
+      "sensitive": true
+    }
+  },
+  "homepage": "https://github.com/nunogois/unleash-skills",
+  "keywords": [
+    "unleash",
+    "feature-flags",
+    "onboarding"
+  ]
+}
