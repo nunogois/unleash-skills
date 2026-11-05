@@ -2,6 +2,10 @@
 
 Installing a skill does not execute this file automatically. Follow the setup for your agent.
 
+## No instance yet?
+
+[Start a free Unleash trial](https://auth.app.getunleash.io/sign-up). Once your instance is ready, return here with its URL and follow your agent's connection setup. If you already use Unleash, connect that instance instead.
+
 ## Requirements
 
 - Node 24 or newer with npm/npx for the pinned local MCP.

@@ -8,6 +8,8 @@ Personal skills for **Claude Code**, **Codex**, and compatible agents. This repo
 | --- | --- |
 | [onboarding](skills/onboarding/SKILL.md) | Guides your first flag integration with a frontend or backend SDK, using your application or a small demo. |
 
+New to Unleash? [Start a free trial](https://auth.app.getunleash.io/sign-up), then use the onboarding skill once your instance is ready.
+
 ## Claude Code
 
 Run inside Claude Code:

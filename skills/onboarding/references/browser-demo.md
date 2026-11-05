@@ -6,6 +6,8 @@ Use with [the onboarding skill](../SKILL.md) when creating a browser demo and gu
 
 Use [demo inspiration](demo-inspiration.md) when helpful. A browser can render a backend-evaluated feature too; do not choose a frontend SDK solely because the result is visual. Create or adapt a small app around the user's context: a new search experience, an optional dashboard feature, or a checkout improvement, for example. The feature should have an obvious, useful before/after behavior and keep reacting to the real flag. The scenario, stack, and design can vary; do not send every user through the same storefront.
 
+The starter's plain-JavaScript SDK choice is not a recommendation for every framework. For the chosen language, framework, and runtime, discover and prioritize the most specific suitable official SDK and adapt the example accordingly.
+
 If useful, copy `assets/browser-demo` from this skill's directory into the agreed demo directory, excluding generated `node_modules` and `dist` folders. This optional starter is a runnable product page whose standard checkout becomes express checkout when the real flag is enabled. Both paths are interactive; it makes no payments or real orders. Adapt it rather than treating it as a fixed specification. The remaining starter-specific setup applies only when using it.
 
 Use its documented npm scripts and locked installation: `npm ci --ignore-scripts`, then `npm run dev`. It needs Node 24 or newer. If this runtime is unavailable, use the user's existing stack while preserving the visual/live-update outcome. Do not install another runtime without discussing it.

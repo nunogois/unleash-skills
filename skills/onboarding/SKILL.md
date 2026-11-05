@@ -15,6 +15,8 @@ Describe what will change and how the user can try it. At the reveal, give the f
 
 ## Establish the connection
 
+If the user does not have an Unleash instance yet, offer to [start a free trial](https://auth.app.getunleash.io/sign-up). Explain that they can return once the instance is ready and continue with their instance URL and agent connection setup. Let the user complete signup; do not ask for a URL or PAT before they have an instance. An unconfigured MCP or authentication failure alone does not mean they need a new account: establish whether they already have an instance and help connect it if so. Preserve any application or SDK choices when resuming.
+
 Reuse the instance URL from the MCP connection instructions, earlier conversation, or returned project/flag URLs. Preserve its base path. Identify the intended connection if several exist. Ask for the URL only if those sources do not provide it; never inspect credential stores to discover it.
 
 This skill targets `@unleash/mcp@0.6.0-beta.5`. Discover the connected tools and read their actual schemas: use `search`/`inspect` for discovery, `manage_flag` for flag definitions, `release` for targeting, and `docs` to locate current documentation. Do not use older `create_flag` or `wrap_change` recipes. Tool prefixes vary by client.
@@ -32,7 +34,7 @@ Ask whether to use an existing app or create a demo, unless already clear.
 - **Browser example:** use [browser guidance](references/browser-demo.md). A visual result can come from a frontend SDK or a backend-evaluated response.
 - **Backend, worker, or CLI:** use [backend guidance](references/backend-reveal.md). Choose behavior the user can deliberately exercise with a request, command, or safe test input. Do not add a browser solely to demonstrate a backend flag.
 
-Read [SDK integration guidance](references/integration.md) and the selected SDK's current official docs. New demos should use the documented short-refresh settings for prompt feedback; preserve existing app settings unless a change is agreed.
+Read [SDK integration guidance](references/integration.md) and the selected SDK's current official docs. Prioritize official Unleash SDKs across all languages and technologies. Discover the most specific supported match for the chosen language, framework, runtime, and evaluation location, using an official framework integration when available and the appropriate official language/runtime SDK otherwise. New demos should use the documented short-refresh settings for prompt feedback; preserve existing app settings unless a change is agreed.
 
 ## Prepare the flag and SDK
 
@@ -42,7 +44,7 @@ Inspect existing flags before creating one. Confirm project, flag name, and envi
 
 For a new demo flag, prepare a 100% audience in the chosen development environment while keeping the flag disabled. The beta's `release` schema supports `flag.state: "disabled"` with an `audience.targets` entry having `rollout: 100`. Inspect the applied result; a pending change request is not applied configuration. Use stable demo identity/context so random sampling cannot masquerade as a toggle. The user's first toggle should be sufficient, without asking them to configure targeting during the reveal.
 
-Read [token guidance](references/tokens.md). The agent's PAT and the app's SDK token are separate. If tooling cannot provision the SDK token, link directly to the selected project's token-creation page and explain the type/environment to choose. Prepare the application's ignored configuration with the known SDK URL; leave only the token for the user. Do not send them to global admin settings, repeat URL questions, or substitute a PAT in SDK code.
+Read [token guidance](references/tokens.md). The agent's PAT and the app's SDK token are separate. If tooling cannot provision the SDK token, link to the selected project's API access page and instruct the user to click **New API token**, then choose the type/environment. Prepare the application's ignored configuration with the known SDK URL; leave only the token for the user. Do not send them to global admin settings, repeat URL questions, or substitute a PAT in SDK code.
 
 ## Try the first toggle
 

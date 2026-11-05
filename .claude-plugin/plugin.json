@@ -1,6 +1,6 @@
 {
   "name": "unleash-skills",
-  "version": "0.1.8",
+  "version": "0.1.11",
   "description": "See your application change behavior when you toggle a flag in Unleash.",
   "author": {
     "name": "nunogois",
